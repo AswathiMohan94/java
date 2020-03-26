@@ -4,11 +4,11 @@ import java.lang.reflect.Array;
 import java.lang.reflect.Field;
 import java.util.Arrays;
 
-public class ObjectReflector {
+public class ObjectReflectorAnnotation {
     public static String dump(Object o, int callCount){
         callCount++;
         StringBuffer tabs = new StringBuffer();
-        for (int k = 0; k < callCount; k++) tabs.append("\t");
+        for (int h = 0; h < callCount; h++) tabs.append("\t");
         StringBuffer buffer = new StringBuffer();
         Class oClass = o.getClass();
         if (oClass.isArray()) {
